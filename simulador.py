@@ -15,13 +15,13 @@ while True:
         v_mensal = int(input("Qual valor você poderá investir mensalmente?: "))
 
         valor = (v_mensal*32) + v_inicial
-        ir = (valor*20)/100
+        ir = (valor*0.20)/100
         v_ir = valor - ir
         b3 = (valor*0.25)/100
         lucro = valor*0.1081
         v_bruto = valor + lucro
 
-        v_lqd = valor - (v_ir + b3)
+        v_lqd = valor - (ir + b3)
 
         print("-------------------------")
         print(" RESULTADO DA SIMULAÇÃO  ")
